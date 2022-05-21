@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css"
+    />
+    <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+    <title>Trabajo Parejas Promesas, JSON, Local Storage y Gráficas</title>
+    <link rel="stylesheet" href="grid.css" />
+  </head>
+  <body>
+    <div class="general">
+      <div class="perro">
+        <div class="imagen">
+          <figure>
+            <img
+              class="perroprincipal"
+              src="https://dummyimage.com/300x300/EEF5DB/eef5db.jpg"
+              alt="..."
+            />
+            <figcaption id="descripcion"></figcaption>
+          </figure>
+        </div>
+        <div class="boton">
+          <button id="perro">Perro</button>
+        </div>
+      </div>
+      <div class="padre">
+        <div id="box1" class="caja">
+          <img
+            class="tamañoimagen"
+            id="img1"
+            src="https://dummyimage.com/120x120/EEF5DB/eef5db.jpg"
+          />
+        </div>
+        <div id="box2" class="caja">
+          <img
+            class="tamañoimagen"
+            id="img2"
+            src="https://dummyimage.com/120x120/EEF5DB/eef5db.jpg"
+          />
+        </div>
+        <div id="box3" class="caja">
+          <img
+            class="tamañoimagen"
+            id="img3"
+            src="https://dummyimage.com/120x120/EEF5DB/eef5db.jpg"
+          />
+        </div>
+        <div id="box4" class="caja">
+          <img
+            class="tamañoimagen"
+            id="img4"
+            src="https://dummyimage.com/120x120/EEF5DB/eef5db.jpg"
+          />
+        </div>
+        <div id="box5" class="caja">
+          <img
+            class="tamañoimagen"
+            id="img5"
+            src="https://dummyimage.com/120x120/EEF5DB/eef5db.jpg"
+          />
+        </div>
+        <div id="box6" class="caja">
+          <img
+            class="tamañoimagen"
+            id="img6"
+            src="https://dummyimage.com/120x120/EEF5DB/eef5db.jpg"
+          />
+        </div>
+        <div id="box7" class="caja">
+          <img
+            class="tamañoimagen"
+            id="img7"
+            src="https://dummyimage.com/120x120/EEF5DB/eef5db.jpg"
+          />
+        </div>
+        <div id="box8" class="caja">
+          <img
+            class="tamañoimagen"
+            id="img8"
+            src="https://dummyimage.com/120x120/EEF5DB/eef5db.jpg"
+          />
+        </div>
+        <div id="box9" class="caja">
+          <img
+            class="tamañoimagen"
+            id="img9"
+            src="https://dummyimage.com/120x120/EEF5DB/eef5db.jpg"
+          />
+        </div>
+        <div id="box10" class="caja">
+          <img
+            class="tamañoimagen"
+            id="img10"
+            src="https://dummyimage.com/120x120/EEF5DB/eef5db.jpg"
+          />
+        </div>
+        <div id="box11" class="caja">
+          <img
+            class="tamañoimagen"
+            id="img11"
+            src="https://dummyimage.com/120x120/EEF5DB/eef5db.jpg"
+          />
+        </div>
+        <div id="box12" class="caja">
+          <img
+            class="tamañoimagen"
+            id="img12"
+            src="https://dummyimage.com/120x120/EEF5DB/eef5db.jpg"
+          />
+        </div>
+        <div id="box13" class="caja">
+          <img
+            class="tamañoimagen"
+            id="img13"
+            src="https://dummyimage.com/120x120/EEF5DB/eef5db.jpg"
+          />
+        </div>
+        <div id="box14" class="caja">
+          <img
+            class="tamañoimagen"
+            id="img14"
+            src="https://dummyimage.com/120x120/EEF5DB/eef5db.jpg"
+          />
+        </div>
+
+        <div id="box15" class="caja">
+          <img
+            class="tamañoimagen"
+            id="img15"
+            src="https://dummyimage.com/120x120/EEF5DB/eef5db.jpg"
+          />
+        </div>
+        <div id="box16" class="caja">
+          <img
+            class="tamañoimagen"
+            id="img16"
+            src="https://dummyimage.com/120x120/EEF5DB/eef5db.jpg"
+          />
+        </div>
+        <div id="box17" class="caja">
+          <img
+            class="tamañoimagen"
+            id="img17"
+            src="https://dummyimage.com/120x120/EEF5DB/eef5db.jpg"
+          />
+        </div>
+        <div id="box18" class="caja">
+          <img
+            class="tamañoimagen"
+            id="img18"
+            src="https://dummyimage.com/120x120/EEF5DB/eef5db.jpg"
+          />
+        </div>
+        <div id="box19" class="caja">
+          <img
+            class="tamañoimagen"
+            id="img19"
+            src="https://dummyimage.com/120x120/EEF5DB/eef5db.jpg"
+          />
+        </div>
+        <div id="box20" class="caja">
+          <img
+            class="tamañoimagen"
+            id="img20"
+            src="https://dummyimage.com/120x120/EEF5DB/eef5db.jpg"
+          />
+        </div>
+      </div>
+    </div>
+    <div id="grafica">
+      <div class="ct-chart ct-perfect-fourth"></div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
