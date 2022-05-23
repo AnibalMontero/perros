@@ -29,15 +29,25 @@ btn.addEventListener('click', () => {
 
       imagen.setAttribute('src', message);
       let array = message.split('/');
+      let claveRaza = array[4].split('-');
 
       let descripcion = document.querySelector('#descripcion');
       descripcion.textContent = array[4];
 
       arrayURL = JSON.parse(localStorage.getItem('perritos'));
-      let busqueda = arrayURL.find((item) => item.id == array[4]);
 
-      if (busqueda == undefined) {
-        obj = { [array[4]]: message };
+      let busqueda = false;
+
+      arrayURL.forEach((element) => {
+        let claves = Object.keys(element);
+        if (claves[0] == claveRaza[0]) {
+          busqueda = true;
+        }
+      });
+
+      if (busqueda == false) {
+        obj = { [claveRaza[0]]: message };
+
         arrayURL.push(obj);
 
         arrayURL.forEach((element) => {
@@ -56,6 +66,7 @@ btn.addEventListener('click', () => {
 
               arrayURL.forEach((element) => {
                 let claves = Object.keys(element);
+
                 claves.forEach((elem) => {
                   razas.push(elem);
                 });
@@ -64,7 +75,7 @@ btn.addEventListener('click', () => {
               for (let i = 0; i < 20; i++) {
                 serie.push(Math.floor(Math.random() * 10));
               }
-              console.log(serie);
+
               // Gráfica
               let data = {
                 labels: [...razas],
