@@ -66,7 +66,8 @@ body {
 }
 
 .boton {
-  margin-top: 20px 15px;  
+  margin-top: 10px;  
+  margin-bottom: 20px;
 }
 #perro {
   display: block;
@@ -95,11 +96,18 @@ body {
   color:black
   
 }
+#lista{
+  margin-top: 20px;
+  color:#FE5F55;
+  font-size: medium;
+  font-weight: bold;
+}
 .ct-series-a .ct-bar {
    stroke: #FE5F55;
    stroke-width: 20px;
    stroke-linecap: square;
 }
+
 
 @media (max-width: 75em) {
   html {
